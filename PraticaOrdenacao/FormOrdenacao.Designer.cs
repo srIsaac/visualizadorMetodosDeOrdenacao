@@ -40,6 +40,12 @@
             this.mergeSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estatísticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bolhaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.seleçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.inserçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.shellSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.heapSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mergeSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bgw = new System.ComponentModel.BackgroundWorker();
@@ -47,12 +53,6 @@
             this.lblDecrescente = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.cbxvet = new System.Windows.Forms.ComboBox();
-            this.seleçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.shellSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quickSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.heapSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mergeSortToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,49 +93,49 @@
             // bolhaToolStripMenuItem
             // 
             this.bolhaToolStripMenuItem.Name = "bolhaToolStripMenuItem";
-            this.bolhaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.bolhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.bolhaToolStripMenuItem.Text = "Bolha";
             this.bolhaToolStripMenuItem.Click += new System.EventHandler(this.bolhaToolStripMenuItem_Click);
             // 
             // seleçãoToolStripMenuItem
             // 
             this.seleçãoToolStripMenuItem.Name = "seleçãoToolStripMenuItem";
-            this.seleçãoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.seleçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.seleçãoToolStripMenuItem.Text = "Seleção";
             this.seleçãoToolStripMenuItem.Click += new System.EventHandler(this.seleçãoToolStripMenuItem_Click);
             // 
             // inserçãoToolStripMenuItem
             // 
             this.inserçãoToolStripMenuItem.Name = "inserçãoToolStripMenuItem";
-            this.inserçãoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.inserçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inserçãoToolStripMenuItem.Text = "Inserção";
             this.inserçãoToolStripMenuItem.Click += new System.EventHandler(this.inserçãoToolStripMenuItem_Click);
             // 
             // shellSortToolStripMenuItem
             // 
             this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
-            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.shellSortToolStripMenuItem.Text = "ShellSort";
             this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
             // quickSortToolStripMenuItem
             // 
             this.quickSortToolStripMenuItem.Name = "quickSortToolStripMenuItem";
-            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quickSortToolStripMenuItem.Text = "QuickSort";
             this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
             // 
             // heapSortToolStripMenuItem
             // 
             this.heapSortToolStripMenuItem.Name = "heapSortToolStripMenuItem";
-            this.heapSortToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.heapSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.heapSortToolStripMenuItem.Text = "HeapSort";
             this.heapSortToolStripMenuItem.Click += new System.EventHandler(this.heapSortToolStripMenuItem_Click);
             // 
             // mergeSortToolStripMenuItem
             // 
             this.mergeSortToolStripMenuItem.Name = "mergeSortToolStripMenuItem";
-            this.mergeSortToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.mergeSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mergeSortToolStripMenuItem.Text = "MergeSort";
             this.mergeSortToolStripMenuItem.Click += new System.EventHandler(this.mergeSortToolStripMenuItem_Click);
             // 
@@ -156,9 +156,51 @@
             // bolhaToolStripMenuItem1
             // 
             this.bolhaToolStripMenuItem1.Name = "bolhaToolStripMenuItem1";
-            this.bolhaToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.bolhaToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.bolhaToolStripMenuItem1.Text = "Bolha";
             this.bolhaToolStripMenuItem1.Click += new System.EventHandler(this.bolhaToolStripMenuItem1_Click_1);
+            // 
+            // seleçãoToolStripMenuItem1
+            // 
+            this.seleçãoToolStripMenuItem1.Name = "seleçãoToolStripMenuItem1";
+            this.seleçãoToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.seleçãoToolStripMenuItem1.Text = "Seleção";
+            this.seleçãoToolStripMenuItem1.Click += new System.EventHandler(this.seleçãoToolStripMenuItem1_Click);
+            // 
+            // inserçãoToolStripMenuItem1
+            // 
+            this.inserçãoToolStripMenuItem1.Name = "inserçãoToolStripMenuItem1";
+            this.inserçãoToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.inserçãoToolStripMenuItem1.Text = "Inserção";
+            this.inserçãoToolStripMenuItem1.Click += new System.EventHandler(this.inserçãoToolStripMenuItem1_Click);
+            // 
+            // shellSortToolStripMenuItem1
+            // 
+            this.shellSortToolStripMenuItem1.Name = "shellSortToolStripMenuItem1";
+            this.shellSortToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.shellSortToolStripMenuItem1.Text = "ShellSort";
+            this.shellSortToolStripMenuItem1.Click += new System.EventHandler(this.shellSortToolStripMenuItem1_Click);
+            // 
+            // quickSortToolStripMenuItem1
+            // 
+            this.quickSortToolStripMenuItem1.Name = "quickSortToolStripMenuItem1";
+            this.quickSortToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.quickSortToolStripMenuItem1.Text = "QuickSort";
+            this.quickSortToolStripMenuItem1.Click += new System.EventHandler(this.quickSortToolStripMenuItem1_Click);
+            // 
+            // heapSortToolStripMenuItem1
+            // 
+            this.heapSortToolStripMenuItem1.Name = "heapSortToolStripMenuItem1";
+            this.heapSortToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.heapSortToolStripMenuItem1.Text = "HeapSort";
+            this.heapSortToolStripMenuItem1.Click += new System.EventHandler(this.heapSortToolStripMenuItem1_Click);
+            // 
+            // mergeSortToolStripMenuItem1
+            // 
+            this.mergeSortToolStripMenuItem1.Name = "mergeSortToolStripMenuItem1";
+            this.mergeSortToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.mergeSortToolStripMenuItem1.Text = "MergeSort";
+            this.mergeSortToolStripMenuItem1.Click += new System.EventHandler(this.mergeSortToolStripMenuItem1_Click);
             // 
             // ajudaToolStripMenuItem
             // 
@@ -190,11 +232,12 @@
             this.radioButton1.TabIndex = 2;
             this.radioButton1.Text = "Crescente";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // lblDecrescente
             // 
             this.lblDecrescente.AutoSize = true;
-            this.lblDecrescente.Location = new System.Drawing.Point(262, 27);
+            this.lblDecrescente.Location = new System.Drawing.Point(263, 27);
             this.lblDecrescente.Name = "lblDecrescente";
             this.lblDecrescente.Size = new System.Drawing.Size(86, 17);
             this.lblDecrescente.TabIndex = 3;
@@ -217,51 +260,15 @@
             // 
             this.cbxvet.FormattingEnabled = true;
             this.cbxvet.Items.AddRange(new object[] {
-            "500",
-            "250",
-            "300",
-            "100"});
+            "1000",
+            "10000",
+            "50000",
+            "100000",
+            "500000"});
             this.cbxvet.Location = new System.Drawing.Point(394, 27);
             this.cbxvet.Name = "cbxvet";
             this.cbxvet.Size = new System.Drawing.Size(121, 21);
             this.cbxvet.TabIndex = 5;
-            // 
-            // seleçãoToolStripMenuItem1
-            // 
-            this.seleçãoToolStripMenuItem1.Name = "seleçãoToolStripMenuItem1";
-            this.seleçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.seleçãoToolStripMenuItem1.Text = "Seleção";
-            this.seleçãoToolStripMenuItem1.Click += new System.EventHandler(this.seleçãoToolStripMenuItem1_Click);
-            // 
-            // inserçãoToolStripMenuItem1
-            // 
-            this.inserçãoToolStripMenuItem1.Name = "inserçãoToolStripMenuItem1";
-            this.inserçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.inserçãoToolStripMenuItem1.Text = "Inserção";
-            // 
-            // shellSortToolStripMenuItem1
-            // 
-            this.shellSortToolStripMenuItem1.Name = "shellSortToolStripMenuItem1";
-            this.shellSortToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.shellSortToolStripMenuItem1.Text = "ShellSort";
-            // 
-            // quickSortToolStripMenuItem1
-            // 
-            this.quickSortToolStripMenuItem1.Name = "quickSortToolStripMenuItem1";
-            this.quickSortToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.quickSortToolStripMenuItem1.Text = "QuickSort";
-            // 
-            // heapSortToolStripMenuItem1
-            // 
-            this.heapSortToolStripMenuItem1.Name = "heapSortToolStripMenuItem1";
-            this.heapSortToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.heapSortToolStripMenuItem1.Text = "HeapSort";
-            // 
-            // mergeSortToolStripMenuItem1
-            // 
-            this.mergeSortToolStripMenuItem1.Name = "mergeSortToolStripMenuItem1";
-            this.mergeSortToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.mergeSortToolStripMenuItem1.Text = "MergeSort";
             // 
             // FormOrdenacao
             // 

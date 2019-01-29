@@ -28,7 +28,7 @@ namespace PraticaOrdenacao {
 
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e) {
             MessageBox.Show(this, 
-                "Métodos de Ordenação - 2018/1\n\nDesenvolvido por:\n71800778 - GABRIEL DIAS PEREIRA\nProf. Virgílio Borges de Oliveira\n\nAlgoritmos e Estruturas de Dados\nFaculdade COTEMIG\nSomente para fins didáticos.", 
+                "Métodos de Ordenação - 2018/2\n\nDesenvolvido por:\n71800387 - Isaac Hugo Campos\nProf. Virgílio Borges de Oliveira\n\nAlgoritmos e Estruturas de Dados\nFaculdade COTEMIG\nSomente para fins didáticos.", 
                 "Sobre o trabalho...", 
                 MessageBoxButtons.OK, 
                 MessageBoxIcon.Information);
@@ -55,7 +55,7 @@ namespace PraticaOrdenacao {
             {
                 MessageBox.Show(this,
                    "Aguarde o fim da execução atual...",
-                   "Métodos de Ordenação - 2018/1",
+                   "Métodos de Ordenação - 2018/2",
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Exclamation);
             }
@@ -69,7 +69,7 @@ namespace PraticaOrdenacao {
         private void bgw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e) {
             MessageBox.Show(this,
                "Animação concluída!",
-               "Métodos de Ordenação - 2018/1",
+               "Métodos de Ordenação - 2018/2",
                MessageBoxButtons.OK,
                MessageBoxIcon.Information);
         }
@@ -107,8 +107,8 @@ namespace PraticaOrdenacao {
                   "Tamanho do vetor: " + tam +
                   "\nOrdenação inicial: " + ordem + 
                   "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
-                  "\nNº de comparações: " +OrdenacaoEstatistica.cc+
-                  "\nNº de trocas: " +OrdenacaoEstatistica.ct,
+                  "\nNº de comparações: " +OrdenacaoEstatistica.ccbolha+
+                  "\nNº de trocas: " +OrdenacaoEstatistica.ctbolha,
                   "Estatísticas do Método Bolha",
                   MessageBoxButtons.OK,
                   MessageBoxIcon.Information);
@@ -170,18 +170,223 @@ namespace PraticaOrdenacao {
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
-            OrdenacaoEstatistica.Bolha(vetor);
+            OrdenacaoEstatistica.selecao(vetor);
             stopwatch.Stop(); // interrompe cronômetro
             long elapsed_time = stopwatch.ElapsedMilliseconds; // calcula o tempo decorrido
             MessageBox.Show(this,
                   "Tamanho do vetor: " + tam +
                   "\nOrdenação inicial: " + ordem +
                   "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
-                  "\nNº de comparações: " + OrdenacaoEstatistica.cc +
-                  "\nNº de trocas: " + OrdenacaoEstatistica.ct,
+                  "\nNº de comparações: " + OrdenacaoEstatistica.ccselecao +
+                  "\nNº de trocas: " + OrdenacaoEstatistica.ctselecao,
                   "Estatísticas do Método Seleção",
                   MessageBoxButtons.OK,
                   MessageBoxIcon.Information);
+        }
+
+        private void inserçãoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int tam = int.Parse(cbxvet.Text);
+            string ordem = "";
+            int[] vetor = new int[tam]; // TODO
+                                        // OrdenacaoEstatistica.contc;
+            if (radioButton2.Checked)
+            {
+                Preenchimento.Aleatorio(vetor, tam);
+                ordem = "Aleatorio";
+            }
+            else if (radioButton1.Checked)
+            {
+                Preenchimento.Crescente(vetor, tam);
+                ordem = "Crescente";
+            }
+            else
+            {
+                Preenchimento.Decrescente(vetor, tam);
+                ordem = "Decrescente";
+            }
+
+            // Preenchimento.Aleatorio(vetor, 1000); // TODO
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start(); // inicia cronômetro
+            OrdenacaoEstatistica.insercao(vetor);
+            stopwatch.Stop(); // interrompe cronômetro
+            long elapsed_time = stopwatch.ElapsedMilliseconds; // calcula o tempo decorrido
+            MessageBox.Show(this,
+                  "Tamanho do vetor: " + tam +
+                  "\nOrdenação inicial: " + ordem +
+                  "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
+                  "\nNº de comparações: " + OrdenacaoEstatistica.ccinsercao +
+                  "\nNº de trocas: " + OrdenacaoEstatistica.ctinsercao,
+                  "Estatísticas do Método Inserção",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
+        }
+
+        private void shellSortToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int tam = int.Parse(cbxvet.Text);
+            string ordem = "";
+            int[] vetor = new int[tam]; // TODO
+                                        // OrdenacaoEstatistica.contc;
+            if (radioButton2.Checked)
+            {
+                Preenchimento.Aleatorio(vetor, tam);
+                ordem = "Aleatorio";
+            }
+            else if (radioButton1.Checked)
+            {
+                Preenchimento.Crescente(vetor, tam);
+                ordem = "Crescente";
+            }
+            else
+            {
+                Preenchimento.Decrescente(vetor, tam);
+                ordem = "Decrescente";
+            }
+
+            // Preenchimento.Aleatorio(vetor, 1000); // TODO
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start(); // inicia cronômetro
+            OrdenacaoEstatistica.shellSort(vetor);
+            stopwatch.Stop(); // interrompe cronômetro
+            long elapsed_time = stopwatch.ElapsedMilliseconds; // calcula o tempo decorrido
+            MessageBox.Show(this,
+                  "Tamanho do vetor: " + tam +
+                  "\nOrdenação inicial: " + ordem +
+                  "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
+                  "\nNº de comparações: " + OrdenacaoEstatistica.ccshellsort +
+                  "\nNº de trocas: " + OrdenacaoEstatistica.ctshellsort,
+                  "Estatísticas do Método ShellSort",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
+        }
+
+        private void quickSortToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int tam = int.Parse(cbxvet.Text);
+            string ordem = "";
+            int[] vetor = new int[tam]; // TODO
+                                        // OrdenacaoEstatistica.contc;
+            if (radioButton2.Checked)
+            {
+                Preenchimento.Aleatorio(vetor, tam);
+                ordem = "Aleatorio";
+            }
+            else if (radioButton1.Checked)
+            {
+                Preenchimento.Crescente(vetor, tam);
+                ordem = "Crescente";
+            }
+            else
+            {
+                Preenchimento.Decrescente(vetor, tam);
+                ordem = "Decrescente";
+            }
+
+            // Preenchimento.Aleatorio(vetor, 1000); // TODO
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start(); // inicia cronômetro
+            OrdenacaoEstatistica.quickSort(vetor,0,vetor.Length - 1);
+            stopwatch.Stop(); // interrompe cronômetro
+            long elapsed_time = stopwatch.ElapsedMilliseconds; // calcula o tempo decorrido
+            MessageBox.Show(this,
+                  "Tamanho do vetor: " + tam +
+                  "\nOrdenação inicial: " + ordem +
+                  "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
+                  "\nNº de comparações: " + OrdenacaoEstatistica.ccquicksort +
+                  "\nNº de trocas: " + OrdenacaoEstatistica.ctquicksort,
+                  "Estatísticas do Método QuickSort",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
+        }
+
+        private void heapSortToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int tam = int.Parse(cbxvet.Text);
+            string ordem = "";
+            int[] vetor = new int[tam]; // TODO
+                                        // OrdenacaoEstatistica.contc;
+            if (radioButton2.Checked)
+            {
+                Preenchimento.Aleatorio(vetor, tam);
+                ordem = "Aleatorio";
+            }
+            else if (radioButton1.Checked)
+            {
+                Preenchimento.Crescente(vetor, tam);
+                ordem = "Crescente";
+            }
+            else
+            {
+                Preenchimento.Decrescente(vetor, tam);
+                ordem = "Decrescente";
+            }
+
+            // Preenchimento.Aleatorio(vetor, 1000); // TODO
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start(); // inicia cronômetro
+            OrdenacaoEstatistica.heapSort(vetor);
+            stopwatch.Stop(); // interrompe cronômetro
+            long elapsed_time = stopwatch.ElapsedMilliseconds; // calcula o tempo decorrido
+            MessageBox.Show(this,
+                  "Tamanho do vetor: " + tam +
+                  "\nOrdenação inicial: " + ordem +
+                  "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
+                  "\nNº de comparações: " + OrdenacaoEstatistica.ccheapsort +
+                  "\nNº de trocas: " + OrdenacaoEstatistica.ctheapsort,
+                  "Estatísticas do Método HeapSort",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
+        }
+
+        private void mergeSortToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int tam = int.Parse(cbxvet.Text);
+            string ordem = "";
+            int[] vetor = new int[tam]; // TODO
+                                        // OrdenacaoEstatistica.contc;
+            if (radioButton2.Checked)
+            {
+                Preenchimento.Aleatorio(vetor, tam);
+                ordem = "Aleatorio";
+            }
+            else if (radioButton1.Checked)
+            {
+                Preenchimento.Crescente(vetor, tam);
+                ordem = "Crescente";
+            }
+            else
+            {
+                Preenchimento.Decrescente(vetor, tam);
+                ordem = "Decrescente";
+            }
+
+            // Preenchimento.Aleatorio(vetor, 1000); // TODO
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start(); // inicia cronômetro
+            OrdenacaoEstatistica.mergeSort(vetor,0,vetor.Length - 1);
+            stopwatch.Stop(); // interrompe cronômetro
+            long elapsed_time = stopwatch.ElapsedMilliseconds; // calcula o tempo decorrido
+            MessageBox.Show(this,
+                  "Tamanho do vetor: " + tam +
+                  "\nOrdenação inicial: " + ordem +
+                  "\n\nTempo de execução: " + String.Format("{0:F4} seg", elapsed_time / 1000.0) +
+                  "\nNº de comparações: " + OrdenacaoEstatistica.ccmergesort +
+                  "\nNº de trocas: " + OrdenacaoEstatistica.ctmergesort,
+                  "Estatísticas do Método MergeSort",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
