@@ -14,7 +14,6 @@ namespace PraticaOrdenacao
         }
         public static void Crescente(int[] vet, int limite)
         {
-            // TODO
             for (int i = 0; i < vet.Length; i++)
             {
                 vet[i] = (int)(i * 0.6); ;
@@ -23,7 +22,6 @@ namespace PraticaOrdenacao
         }
         public static void Decrescente(int[] vet, int limite)
         {
-            // TODO
             for (int i = 0; i < vet.Length; i++)
             {
                 vet[i] = limite - (int)(i * 0.6);

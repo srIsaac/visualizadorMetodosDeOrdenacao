@@ -24,8 +24,6 @@ namespace PraticaOrdenacao {
             iniciaAnimacao(() => OrdenacaoGrafica.Bolha(vet, panel));
         }
 
-        // TODO: animação e estatísticas dos demais métodos de ordenação
-
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e) {
             MessageBox.Show(this, 
                 "Métodos de Ordenação - 2018/2\n\nDesenvolvido por:\n71800387 - Isaac Hugo Campos\nProf. Virgílio Borges de Oliveira\n\nAlgoritmos e Estruturas de Dados\nFaculdade COTEMIG\nSomente para fins didáticos.", 
@@ -78,8 +76,7 @@ namespace PraticaOrdenacao {
 
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-           // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -95,8 +92,6 @@ namespace PraticaOrdenacao {
                 Preenchimento.Decrescente(vetor, tam);
                 ordem = "Decrescente";
             }
-
-           // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
@@ -148,8 +143,7 @@ namespace PraticaOrdenacao {
         {
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-                                        // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -165,8 +159,6 @@ namespace PraticaOrdenacao {
                 Preenchimento.Decrescente(vetor, tam);
                 ordem = "Decrescente";
             }
-
-            // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
@@ -188,8 +180,7 @@ namespace PraticaOrdenacao {
         {
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-                                        // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -205,8 +196,6 @@ namespace PraticaOrdenacao {
                 Preenchimento.Decrescente(vetor, tam);
                 ordem = "Decrescente";
             }
-
-            // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
@@ -228,8 +217,7 @@ namespace PraticaOrdenacao {
         {
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-                                        // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -246,7 +234,6 @@ namespace PraticaOrdenacao {
                 ordem = "Decrescente";
             }
 
-            // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
@@ -268,8 +255,7 @@ namespace PraticaOrdenacao {
         {
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-                                        // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -286,7 +272,6 @@ namespace PraticaOrdenacao {
                 ordem = "Decrescente";
             }
 
-            // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
@@ -308,8 +293,7 @@ namespace PraticaOrdenacao {
         {
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-                                        // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -326,7 +310,6 @@ namespace PraticaOrdenacao {
                 ordem = "Decrescente";
             }
 
-            // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro
@@ -348,8 +331,7 @@ namespace PraticaOrdenacao {
         {
             int tam = int.Parse(cbxvet.Text);
             string ordem = "";
-            int[] vetor = new int[tam]; // TODO
-                                        // OrdenacaoEstatistica.contc;
+            int[] vetor = new int[tam]; 
             if (radioButton2.Checked)
             {
                 Preenchimento.Aleatorio(vetor, tam);
@@ -366,7 +348,6 @@ namespace PraticaOrdenacao {
                 ordem = "Decrescente";
             }
 
-            // Preenchimento.Aleatorio(vetor, 1000); // TODO
 
             var stopwatch = new Stopwatch();
             stopwatch.Start(); // inicia cronômetro

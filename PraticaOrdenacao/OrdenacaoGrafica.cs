@@ -5,7 +5,7 @@ namespace PraticaOrdenacao
 {
     class OrdenacaoGrafica
     {
-        // TODO: declarar demais métodos de ordenação
+        
         public static void Bolha(int[] vet, Panel p)
         {
             int i, j, temp;

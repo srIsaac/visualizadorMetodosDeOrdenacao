@@ -1,7 +1,6 @@
 ﻿namespace PraticaOrdenacao {
     class OrdenacaoEstatistica {
-        // TODO: contador de comparações e trocas
-        // TODO: declarar demais métodos de ordenação
+        
         public static int ccbolha;
         public static int ctbolha;
 
